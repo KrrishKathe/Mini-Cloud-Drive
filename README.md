@@ -36,5 +36,5 @@ This was solved by updating the redirect URLs in the settings.py and proper navi
 Mini Cloud Drive with authentication, upload, preview, and filter features — styled with a modern UI and smooth navigation.
 
 
-**Author:** Rachana (Roll No. 318, IT-A)  
-**Project:** Mini Drive — Practical No. 3  
+**Author:** Krrish Sachin Kathe (Roll No. 310, Class: SE IT-A1)  
+**Project:** Mini Cloud Drive
