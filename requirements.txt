@@ -1,0 +1,46 @@
+REQUIREMENTS-
+
+Django==5.0.6
+pytz
+sqlparse
+asgiref
+tzdata
+
+How to Run the Project-
+
+1. Open a terminal (Command Prompt on Windows or Terminal on Mac).
+2. Navigate to the project folder that contains manage.py.
+
+   Example:
+   Windows:
+   cd C:\Users\YourName\mini_drive_project
+
+   Mac:
+   cd /Users/YourName/mini_drive_project
+
+3. Create and activate a virtual environment.
+
+   Windows:
+   python -m venv venv
+   venv\Scripts\activate
+
+   Mac:
+   python3 -m venv venv
+   source venv/bin/activate
+
+4. Install all required dependencies.
+   pip install -r requirements.txt
+
+5. Apply migrations to set up the database.
+   python manage.py makemigrations
+   python manage.py migrate
+
+6. Run the development server.
+   python manage.py runserver
+
+7. Open the browser and go to:
+   http://127.0.0.1:8000/
+
+To stop the server, press Ctrl + C in the terminal.
+
+
