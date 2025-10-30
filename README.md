@@ -11,6 +11,41 @@ File Preview: View files directly before downloading.
 Sorting & Filtering: Filter files by extension and sort alphabetically or by date.  
 *Modern UI: Simple, clean, and professional dashboard with custom CSS.  
 
+Tech Stack Used
+
+- **Backend:** Python, Django
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Database:** SQLite (default Django database)
+- **Libraries:** Django built-in authentication
+
+**File Architecture:** 
+
+mini_drive_project/
+│
+├── mini_drive/ # Main project configuration files
+│ ├── settings.py # Project settings and configuration
+│ ├── urls.py # Root URL routing
+│ └── wsgi.py # WSGI entry point
+│
+├── storage/ # Core application
+│ ├── models.py # Defines the Document model
+│ ├── views.py # Contains all backend logic
+│ ├── urls.py # App-level URL patterns
+│ ├── templates/ # HTML templates
+│ │ ├── dashboard.html
+│ │ ├── document_list.html
+│ │ ├── upload_document.html
+│ │ ├── login.html
+│ │ └── register.html
+│ └── static/ # CSS and static assets
+│ └── css/
+│ └── style.css
+│
+├── db.sqlite3 # Database file
+├── manage.py # Django management script
+├── requirements.txt 
+├── Screenshots
+
 **Problems Faced & Solutions**
 
 During the development of this project, several challenges were encountered.  
@@ -36,5 +71,5 @@ This was solved by updating the redirect URLs in the settings.py and proper navi
 Mini Cloud Drive with authentication, upload, preview, and filter features — styled with a modern UI and smooth navigation.
 
 
-**Author:** Krrish Sachin Kathe (Roll No. 310, Class: SE IT-A1)  
+**Author:** Krrish Sachin Kathe (Roll No. 310, Class: SE IT-A1) (Worked on this project as a single person) 
 **Project:** Mini Cloud Drive
