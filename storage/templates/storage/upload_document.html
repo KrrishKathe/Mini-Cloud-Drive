@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Document - Mini Drive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'storage/style.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Mini Drive</div>
+        <nav>
+            <a href="{% url 'dashboard' %}">Dashboard</a>
+            <a href="{% url 'document_list' %}">My Documents</a>
+            <a href="{% url 'login' %}">Logout</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h1>Upload Document</h1>
+            <form action="{% url 'document_list' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="doc_title">Document Title</label>
+                <input type="text" id="doc_title" name="doc_title" placeholder="Enter document title" required>
+
+                <label for="file">Choose File</label>
+                <input type="file" id="file" name="file" required>
+
+                <button type="submit" class="btn-primary">Upload</button>
+            </form>
+            <a href="{% url 'dashboard' %}" class="btn-secondary mt-10">Back to Dashboard</a>
+        </div>
+    </main>
+</body>
+</html>
